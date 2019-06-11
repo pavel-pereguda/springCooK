@@ -1,4 +1,4 @@
-package springination;
+package com.springinaction.springidol;
 
 public interface Poem
 {

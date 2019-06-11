@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 	<!-- Здесь должны находиться объявления компонентов -->
 
-	<bean id="duke"
-	class="springination.Juggler"/>
+	<context:annotation-config />
+
+	<bean id="Juggler"
+	      class="com.springinaction.springidol.Juggler">
+		<constructor-arg value="15" />
+	</bean>
+
+	<bean id="Instrumentalist"
+	      class="com.springinaction.springidol.Instrumentalist"/>
+
+	<bean id="PoeticJuggler"
+	      class="com.springinaction.springidol.PoeticJuggler">
+
+	</bean>
+
+	<bean id="Saxophone"
+	      class="com.springinaction.springidol.Saxophone"/>
+
+	<bean id="Sonnet29"
+	      class="com.springinaction.springidol.Sonnet29"/>
+
 </beans>

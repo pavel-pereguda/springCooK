@@ -1,9 +1,8 @@
-package springination;
+package com.springinaction.springidol;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
 public class Instrumentalist implements Performer
 {
 	public Instrumentalist()
@@ -34,8 +33,6 @@ public class Instrumentalist implements Performer
 		return song;
 	}
 
-
-	@Autowired
 	private Instrument instrument;
 
 
