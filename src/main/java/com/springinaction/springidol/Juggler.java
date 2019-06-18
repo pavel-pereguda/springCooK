@@ -13,6 +13,9 @@ public class Juggler implements Performer
 		this.beanBags = beanBags;
 	}
 
+
+
+
 	public void perform()
 	{
 		System.out.println("JUGGLING " + beanBags + " BEANBAGS");
