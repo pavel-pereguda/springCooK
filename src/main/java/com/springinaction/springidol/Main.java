@@ -11,6 +11,8 @@ public class Main
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
 			"spring/settings.xml");
 		Performer performer = (Performer) ctx.getBean("PoeticJuggler");
+
+
 		performer.perform();
 	}
 
