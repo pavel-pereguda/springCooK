@@ -22,6 +22,9 @@ public class PoeticJuggler extends Juggler
 		System.out.println("While reciting...");
 		poem.recite();
 
+
+
+
 		System.out.println("Try to play:");
 		instrument.play();
 	}
